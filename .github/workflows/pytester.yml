@@ -1,4 +1,4 @@
-name: Pytesting and the Code Coverage Badge 
+name: Pytesting, Test Coverage 
 
 on: [push, pull_request]
 
@@ -27,4 +27,5 @@ jobs:
     - name: Test with pytest and check test coverage
       run: |        
         pytest --cov
-   
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1    

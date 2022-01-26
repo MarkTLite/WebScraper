@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.8"
+# command to install dependencies
+install:
+  - pip install -r dependencies.txt
+# command to run tests with test coverage also
+script:
+  - pytest --cov

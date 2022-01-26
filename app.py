@@ -3,8 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-
-
 def get_response(url,co_query={}):
     response = requests.get(url,params=co_query)   
     return(response)
@@ -26,7 +24,8 @@ def get_a_tags(html):
     a_tags = soupObj.find_all('a')   
     return a_tags
 
-def get_google_urls(company_name):     
+def get_google_urls(company_name):
+    """Get google search results response content"""     
     co_query = {'q':company_name}    
     response = get_response('https://www.google.com/search?',co_query)        
     print("\nGoogle Search Response status_code: ",response.status_code)

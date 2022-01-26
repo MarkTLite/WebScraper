@@ -1,4 +1,4 @@
-name: Pytesting, Test Coverage 
+name: tests 
 
 on: [push, pull_request]
 

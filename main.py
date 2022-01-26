@@ -1,6 +1,5 @@
 
 import app
-from sqlalchemy import null
 
 
 def get_details_dict(emails,company_name):     
